@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bookers</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <style type="text/css">
+
+    a:link { color: #000000; }
+    a:visited { color: #666666;}
+    a:hover { color: #ffffff; 
+              background-color: #000000;}
+    a:active { color: #fff; }
+
+    </style>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

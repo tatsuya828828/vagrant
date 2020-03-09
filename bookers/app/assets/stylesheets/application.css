@@ -1,0 +1,88 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ *{
+ 	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+ }
+ h1,p,span,table{
+ 	font-family: verdana, arial, helvetica, sans-serif;
+ 	color: #333333;
+	}
+p,span{
+	line-height: 18px;
+	font-size: 13px;
+}
+.top p, .show p{
+	margin: 33px;
+
+}
+strong{
+	font-weight: bold;
+}
+/*top*/
+.edit,.index,.top,.show{
+	margin: 33px;
+}
+h1{
+	font-size: 26px;
+	margin: 17.42px 0;
+	line-height: 18px;
+}
+input{
+	padding: 1px;
+
+}
+textarea{
+	padding: 2px;
+}
+.notice{
+	color: green;
+	margin: 33px;
+	font-size: 13px;
+}
+/*top*/
+
+/*show*/
+.show,.edit {
+	font-size: 0;
+}
+/*show*/
+
+/*edit*/
+.edit p{
+	margin-bottom: 10px;
+}
+/*edit*/
+
+/*index*/
+table{
+	font-size: 13px;
+}
+.newbook{
+	font-size: 19.5px;
+	margin: 16.5px 0;
+}
+th{
+	padding: 1px 1px 5px;
+}
+td{
+	padding: 1px 5px 7px;
+}
+h3{
+	font-size: 13px;
+}
+
