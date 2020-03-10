@@ -18,7 +18,7 @@
  	padding: 0;
  	box-sizing: border-box;
  }
- h1,p,span,table{
+ h1,p,span,table,h2,li{
  	font-family: verdana, arial, helvetica, sans-serif;
  	color: #333333;
 	}
@@ -34,14 +34,41 @@ strong{
 	font-weight: bold;
 }
 /*top*/
-.edit,.index,.top,.show{
+.edit,.index,.top,.show,ul{
 	margin: 33px;
+	line-height: 18px;
 }
 h1{
 	font-size: 26px;
 	margin: 17.42px 0;
 	line-height: 18px;
 }
+/*error*/
+h2,li{
+	font-size: 12px;
+}
+h2{
+	font-weight: bold;
+	padding: 5px 5px 5px 15px;
+	margin: -7px;
+	margin-bottom: 0;
+	background-color: #c00;
+	color: #fff;
+	text-align: left;
+}
+ul{
+	padding-left: 40px;
+}
+.error_explanation{
+	width: 468px;
+	border: 2px solid red;
+	padding: 7px;
+	padding-bottom: 0;
+	margin-bottom: 20px;
+	background-color: #f0f0f0;
+}
+/*error*/
+
 input{
 	padding: 1px;
 

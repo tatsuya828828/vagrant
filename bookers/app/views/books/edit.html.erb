@@ -1,7 +1,18 @@
 <div class="edit">
 	<p class="notice"><%= notice %></p>
 	<h1>Editing Book</h1>
+
 	<%= form_for(@book) do |f| %>
+		<% if @book.errors.any? %>
+		<div class="error_explanation">
+			<h2><%= @book.errors.count %> errors prohibited this book from being saved:</h2>
+			<ul>
+				<% @book.errors.full_messages.each do |message| %>
+				<li><%= message %></li>
+				<% end %>
+			</ul>
+		</div>
+		<% end %>
 
 		<p>Title<br>
 		<%= f.text_field :title %></p>
