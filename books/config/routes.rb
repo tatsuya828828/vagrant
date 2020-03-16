@@ -6,7 +6,6 @@ Rails.application.routes.draw do
   get 'home/about' => 'homes#about'
   resources :users
   resources :books
-
   get 'books/book.id' => 'books#show'
   delete 'books/:id' => 'books#destroy', as: 'destroy_book'
 end
