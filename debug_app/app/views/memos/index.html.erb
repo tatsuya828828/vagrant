@@ -13,6 +13,7 @@
 
   <tbody>
     <% @memos.each do |memo| %>
+    <% binding.pry %>
       <tr>
         <td><%= memo.title %></td>
         <td><%= memo.comment %></td>
